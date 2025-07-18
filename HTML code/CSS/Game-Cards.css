@@ -30,11 +30,11 @@
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     width: 250px;
-    padding: 10px 15px 10px 10px;
+    padding: 10px;
     transition-duration: 0.15s;
 }
 .game-card:hover {
-    scale: 1.04;
+    scale: 1.02;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
 }
 .game-card2 {
@@ -47,7 +47,7 @@
     scale: 0.89;
 }
 .game-card2:hover {
-    scale: 0.93;
+    scale: 0.91;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
 }
 
@@ -56,36 +56,39 @@
     width: 125px;
 }
 .game-info-flex {
-    background-color: #414141;
+    background-color: #282828;
     display: flex;
     flex-direction: row;
-    width: 250px;
-    height: 124px;
-
-    border-radius: 7px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    height: 150px;
 }
 .game-info {
-    flex: 1;
-    margin-top: 2.75px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
 }
 .game-image-div {
     height: 333px;
+    margin-bottom: 10px;
     
 }
 .game-image {
     width: 250px;
     height: 333px;
-    border: #6aa870 solid 3px;
+    border-radius: 6px;
+    
 }
 .add-to-cart-button,
 .examine-button {
-    width: 100px;
-    height: 61px;
+    height: 65px;
+    width: 120px;
     border: none;
+    border-radius: 5px;
     font-size: 18px;
     font-weight: 500;
     font-family: Roboto, Arial;
-    border-right: solid 3px #6aa870;
 }
 .add-to-cart-button {
     color: black;
@@ -103,8 +106,10 @@
 .examine-button {
     color: white;
     background-color: #6E6E6E;
-    border-bottom-left-radius: 5px;
     transition-duration: 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .examine-button:hover {
     background-color: rgb(72, 72, 72);
@@ -114,7 +119,6 @@
     opacity: 0.7;
 }
 .game-name-div {
-    flex: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,14 +126,14 @@
 }
 .game-name {
     font-size: 23px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: Roboto, Arial;
     font-weight: 600;
     pointer-events: none;
 }
 .game-name2 {
     font-size: 21px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: Roboto, Arial;
     font-weight: 600;
     pointer-events: none;
