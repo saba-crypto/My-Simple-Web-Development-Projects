@@ -1,6 +1,6 @@
 .gamepad-image {
     width: 400px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .first-segment {
     display: flex;
@@ -47,18 +47,17 @@
     font-size: 60px;
     width: 200px;
     color: white;
-    cursor: pointer;
+    pointer-events: none;
+    text-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
 }
-.brand-name:active {
-    cursor: progress;
-}
+
 
 .buy-button,
 .sign-in-button {
     padding: 18px 60px;
     margin-top: 20px;
     margin-right: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
 }   
 .buy-button {
@@ -69,8 +68,8 @@
     transition-duration: 0.15s;
 }
 .buy-button:hover {
-    background-color: #11ff00;
-    color: black;
+    background-color: #37dc00;
+    color: rgb(0, 0, 0);
     scale: 1.03;
     cursor: pointer;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
