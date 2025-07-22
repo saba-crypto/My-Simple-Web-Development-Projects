@@ -2,12 +2,13 @@
 .subscription-card p {
     margin: 0;
 }
-.subscriptions-flex {
+.subscriptions-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-evenly;
     align-content: center;
     padding-bottom: 200px;
+    width: 100%;
 }   
 .subscription-card {
     justify-self: center;
@@ -63,6 +64,8 @@ span {
 }
 .subscription-card .main-content .benefit, .lose {
     font-size: 20px;
+    display: flex;
+    align-items: center;
 }
 .lose {
     opacity: 0.4;
