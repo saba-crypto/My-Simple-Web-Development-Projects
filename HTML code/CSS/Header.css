@@ -17,9 +17,9 @@
 .right-segment {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-    gap: 10px;
+    justify-content: space-between;
+    width: 270px;
+    margin-right: 10px;
 }
 .profile-picture {
     position: relative;
@@ -99,47 +99,49 @@
 /*-------------Left Segment--------------*/
 
 .left-segment {
-    margin-left: 20px;
-    width: 191px;
     display: flex;
     align-items: center;
 }
-.home-div {
-    width: 80px;
-}
+
 .home {
-    font-size: 24px;
     margin: 0;
+    font-size: 24px;
     color: white;
     cursor: pointer;
     text-decoration: none;
 }
-.menu-icon-div {
-    width: 60px;
-    cursor: pointer;
-}
+
 .menu-icon {
     width: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 /*-------------Middle Segment--------------*/
-
-.search-bar-div {
+.middle-segment {
+    flex: 1;
+    max-width: 500px;
+    min-width: 150px;
+    margin-left: 100px;
+    margin-right: 30px;  
+}
+.search-bar-div {  
     display: flex;
     align-items: center;
     background-color: #BAFF39;
-    border-radius: 10px;
+    border-radius: 10px;   
 }
 .search-bar {
-    
-    min-width: 50px;
+    width: 100%;          
+    min-width: 0;         
     height: 50px;
     font-size: 20px;
     padding-left: 10px;
     border-radius: 10px;
     border: none;
     background-color: #BAFF39;
-    
+    box-sizing: border-box;
 }
 .search-bar::placeholder {
     color: rgb(0, 0, 0);

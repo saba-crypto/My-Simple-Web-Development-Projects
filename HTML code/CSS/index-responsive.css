@@ -45,11 +45,35 @@
     }
 
 
-    /*Design For Header Only*/
-
     
+
+
 }
 @media (max-width: 750px) {
+
+
+    /*design for header*/
+
+    .search-bar::placeholder {
+        font-size: 18px;
+    }
+    .main-header .log-in-button {
+        padding: 16px 20px;
+    }
+    .main-header .right-segment {
+        max-width: 200px;
+    }
+    .main-header .middle-segment {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .main-header .menu-icon {
+        margin: 0px 10px;
+    }
+    .main-header .home {
+        font-size: 0.1px;
+    }
+
     .more-games-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -70,6 +94,29 @@
 /*Responsive Design Mostly For phones*/
 
 @media (max-width: 520px) {
+    
+
+    /*design for header*/
+
+    .main-header .log-in-button {
+        font-size: 13px;
+        padding: 16px 18px;
+    }
+
+    .main-header .right-segment {
+        justify-content: space-evenly;
+        max-width: 220px;
+        margin: 0;
+
+    }
+    .main-header .profile-picture, .profile-picture-div {
+        width: 0.1px;
+        height: 0.1px;
+    }
+
+
+
+
     .game-card {
         scale: 0.8;
     }
@@ -95,7 +142,7 @@
         font-size: 35px;
     }
 
-    /*Design For Subscription Cards Segment Only*/
+    /*Design For Subscription Cards Segment*/
 
     .subscription-card {
         min-width: 70%;
