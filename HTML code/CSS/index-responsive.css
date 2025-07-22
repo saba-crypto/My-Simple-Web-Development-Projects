@@ -43,6 +43,11 @@
         max-width: 85%;
         min-width: 250px;
     }
+
+
+    /*Design For Header Only*/
+
+    
 }
 @media (max-width: 750px) {
     .more-games-grid {
@@ -60,6 +65,9 @@
     
 }
 }
+
+
+/*Responsive Design Mostly For phones*/
 
 @media (max-width: 520px) {
     .game-card {
@@ -86,6 +94,9 @@
     .subscriptions {
         font-size: 35px;
     }
+
+    /*Design For Subscription Cards Segment Only*/
+
     .subscription-card {
         min-width: 70%;
     }  
