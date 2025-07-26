@@ -1,0 +1,124 @@
+.gamepad-image {
+    width: 50%;
+    border-radius: 10px;
+    min-width: 220px;
+}
+.first-segment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.first-text-div {
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+}
+.first-text {
+    font-size: 35px;
+    margin-right: 20px;
+    pointer-events: none;
+}
+.hidden-brand-name {
+    font-size: 0.1px;
+    opacity: 0;
+    color: white;
+    font-weight: 700;
+    text-wrap: wrap;
+    width: 50px;
+}
+.upper-text {
+    display: flex;
+    
+    align-items: center;
+    margin-bottom: 25px;
+}
+.aditional-text-div {
+    border: none;
+    background-color: #BAFF39;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    min-width: 100px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.aditional-text {
+    width: 100%;
+    border: none;
+    color: black;
+    pointer-events: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+.introduction {
+    margin-right: 100px;
+    max-width: 700px;
+}
+.brand-name-div {
+    margin-left: 80px;
+}
+.brand-name {
+    font-size: 60px;
+    width: 200px;
+    color: white;
+    pointer-events: none;
+    text-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.first-segment-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 460px;
+    column-gap: 10px;
+}
+
+.buy-button,
+.sign-in-button {
+    max-width: 200px;
+    width: 100%;
+    padding: 18px 0px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+}   
+.buy-button {
+    background-color: #BAFF39;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    transition-duration: 0.15s;
+    border: solid 2px #BAFF39;
+}
+.buy-button:hover {
+    background-color: #a6e434;
+    border-color: #a6e434;
+    color: rgb(0, 0, 0);
+    scale: 1.03;
+    cursor: pointer;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+.buy-button:active {
+    scale: 0.97;
+}
+.sign-in-button {
+    background-color: transparent;
+    border: white solid 2px;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    transition-duration: 0.15s;
+}
+.sign-in-button:hover {
+    color: #6E6E6E;
+    background-color: white;
+    scale: 1.03;
+    cursor: pointer;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+}
+.sign-in-button:active {
+    scale: 0.97;
+}
