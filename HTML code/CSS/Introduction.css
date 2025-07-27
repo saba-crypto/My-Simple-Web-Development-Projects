@@ -1,6 +1,7 @@
 .gamepad-image {
-    width: 400px;
+    width: 50%;
     border-radius: 10px;
+    min-width: 220px;
 }
 .first-segment {
     display: flex;
@@ -9,36 +10,50 @@
     margin-bottom: 100px;
 }
 .first-text-div {
-    width: 300px;
+    width: 50%;
     display: inline-block;
+    height: 100%;
 }
 .first-text {
     font-size: 35px;
     margin-right: 20px;
     pointer-events: none;
 }
+.hidden-brand-name {
+    font-size: 0.1px;
+    opacity: 0;
+    color: white;
+    font-weight: 700;
+    text-wrap: wrap;
+    width: 50px;
+}
 .upper-text {
     display: flex;
-    flex-direction: row;
+    
     align-items: center;
     margin-bottom: 25px;
 }
 .aditional-text-div {
+    border: none;
     background-color: #BAFF39;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 660px;
     padding: 20px;
     border-radius: 10px;
+    max-width: 700px;
+    min-width: 100px;
+    box-sizing: border-box;
+    width: 100%;
 }
 .aditional-text {
-    width: 540px;
+    width: 100%;
+    border: none;
     color: black;
     pointer-events: none;
+    font-size: 24px;
+    font-weight: 700;
 }
 .introduction {
     margin-right: 100px;
+    max-width: 700px;
 }
 .brand-name-div {
     margin-left: 80px;
@@ -51,14 +66,23 @@
     text-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
 }
 
+.first-segment-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 460px;
+    column-gap: 10px;
+}
 
 .buy-button,
 .sign-in-button {
-    padding: 18px 60px;
-    margin-top: 20px;
-    margin-right: 20px;
+    max-width: 200px;
+    width: 100%;
+    padding: 18px 0px;
     border-radius: 10px;
     border: none;
+    box-sizing: border-box;
 }   
 .buy-button {
     background-color: #BAFF39;
@@ -66,9 +90,11 @@
     font-size: 20px;
     font-weight: 600;
     transition-duration: 0.15s;
+    border: solid 2px #BAFF39;
 }
 .buy-button:hover {
-    background-color: #37dc00;
+    background-color: #a6e434;
+    border-color: #a6e434;
     color: rgb(0, 0, 0);
     scale: 1.03;
     cursor: pointer;

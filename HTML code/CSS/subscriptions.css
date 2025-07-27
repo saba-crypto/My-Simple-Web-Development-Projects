@@ -125,7 +125,7 @@ span {
     align-items: center;
 }
 .about-us-text-div {
-    width: 600px;
+    max-width: 600px;
     margin: 0px 50px 0px 50px;
     background-color: #BAFF39;
     padding: 35px 25px 35px 25px;

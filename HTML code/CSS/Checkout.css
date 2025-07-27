@@ -9,6 +9,9 @@ p {
     display: flex;
     flex-direction: row;
 }
+
+/*----------CART----------*/
+
 .left-side-div {
     margin-left: 40px;
 }
@@ -114,13 +117,19 @@ p {
     opacity: 1;
 }
 
-
-
-.pay-check {
-    scale: 1.15;
+/*----------PAY CHECK----------*/
+.right-side-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
-    right: 65px;
-    top: 80px;
+    right: 50px;
+    top: 30px;
+    bottom: 30px;
+    row-gap: 20px;
+}
+.pay-check {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,4 +237,23 @@ p {
     transition-duration: 0.01s;
     opacity: 0.8;
 }
+.track-orders-button {
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    border: solid 3px white;
 
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+.track-orders-button:hover {
+    background-color: white;
+    color: #818181;
+}
+.track-orders-button:active {
+    opacity: 0.8;
+}
