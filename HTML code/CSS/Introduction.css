@@ -8,6 +8,10 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
+    background-color: rgb(41, 41, 41);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    padding-bottom: 80px;
+    padding-top: 60px;
 }
 .first-text-div {
     width: 50%;
@@ -15,6 +19,8 @@
     height: 100%;
 }
 .first-text {
+    text-shadow: 0px 0px 18px rgba(0, 204, 37, 0.5);
+    color: var(--primary-clr);
     font-size: 35px;
     margin-right: 20px;
     pointer-events: none;
@@ -35,7 +41,7 @@
 }
 .aditional-text-div {
     border: none;
-    background-color: #BAFF39;
+    background-color: var(--primary-clr);
     padding: 20px;
     border-radius: 10px;
     max-width: 700px;
@@ -85,12 +91,12 @@
     box-sizing: border-box;
 }   
 .buy-button {
-    background-color: #BAFF39;
-    color: black;
+    background-color: var(--accent-clr);
+    color: white;
     font-size: 20px;
     font-weight: 600;
     transition-duration: 0.15s;
-    border: solid 2px #BAFF39;
+    border: solid 2px var(--accent-clr);
 }
 .buy-button:hover {
     background-color: #a6e434;
@@ -106,8 +112,8 @@
 }
 .sign-in-button {
     background-color: transparent;
-    border: white solid 2px;
-    color: white;
+    border: var(--optional-clr) solid 2px;
+    color: var(--optional-clr);
     font-size: 19px;
     font-weight: 600;
     transition-duration: 0.15s;

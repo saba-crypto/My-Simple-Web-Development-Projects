@@ -12,7 +12,7 @@
 }   
 .subscription-card {
     justify-self: center;
-    background-color: white;
+    background-color: var(--optional-clr);
     display: inline-block;
     color: black;
     border-radius: 9px;
@@ -33,7 +33,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #BAFF39;
+    background-color: var(--primary-clr);
     padding: 30px;
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
@@ -97,20 +97,20 @@ span {
     font-size: 25px;
     padding: 20px 80px;
     width: 100%;
-    border: #81c600 solid 3px;
-    color: #81c600;
+    border: var(--accent-clr) solid 3px;
+    color: var(--accent-clr);
     background-color: transparent;
     transition-duration: 0.17s;
     font-weight: 500;
 }
 .buy-now-button:hover {
     color: white;
-    background-color: #81c600;
+    background-color: var(--accent-clr);
     cursor: pointer;
 }
 .buy-now-button:active {
-    background-color: #5d9000;
-    border-color: #5d9000;
+    background-color: #c300ff;
+    border-color: #c300ff;
 }
 .about-us-image {
     width: 285px;
@@ -127,7 +127,7 @@ span {
 .about-us-text-div {
     max-width: 600px;
     margin: 0px 50px 0px 50px;
-    background-color: #BAFF39;
+    background-color: var(--primary-clr);
     padding: 35px 25px 35px 25px;
     border-radius: 8px;
 }
@@ -148,7 +148,7 @@ span {
     margin: 0px 0px 30px 0px;
     font-size: 40px;
     color: rgb(0, 0, 0);
-    background-color: #BAFF39;
+    background-color: var(--primary-clr);
     padding: 30px;
     border-radius: 8px;
 }
