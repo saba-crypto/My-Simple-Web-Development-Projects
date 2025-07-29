@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: space-between;
     width: 270px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .profile-picture {
     position: relative;
@@ -28,6 +28,7 @@
     object-fit: cover;
     border-radius: 30px;
     cursor: pointer;
+    
 }
 .profile-picture-div .tooltip {
     position: absolute;

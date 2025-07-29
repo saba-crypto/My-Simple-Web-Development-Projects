@@ -187,10 +187,10 @@
 }
 .more-button:hover {
     background-color: var(--optional-clr);
-    color: #6E6E6E;
+    color: var(--background-clr);
     cursor: pointer;
 }
 .more-button:active {
-    scale: 0.95;
+    scale: 0.97;
 }
 

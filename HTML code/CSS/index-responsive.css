@@ -270,5 +270,49 @@
     }
     .about-us-text {
         font-size: 22px;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
     }
 }
+
+
+
+
+/*--------------------ANIMATIONS--------------------*/
+
+.popular-games-animation,
+.game-card-animation {
+    animation: revealFromBottom 5s both;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.subscription-card-animation {
+    animation: scaleUp 5s both;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.about-us-animation {
+    animation: revealFromRight 5s both;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes revealFromBottom {
+    from {
+        transform: translateY(200px) scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        scale: 0.5;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}   

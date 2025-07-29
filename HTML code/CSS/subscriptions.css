@@ -18,15 +18,17 @@
     border-radius: 9px;
     transition-duration: 0.2s;
     width: 85%;
-
     margin-top: 50px;
 }
 .bigger-subscription-card {
-    scale: 1.02;
+    scale: 1.04;
 }
 .subscription-card:hover {
     scale: 1.03;
     box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+}
+.bigger-subscription-card:hover {
+    scale: 1.07;
 }
 .header {
     display: flex;
