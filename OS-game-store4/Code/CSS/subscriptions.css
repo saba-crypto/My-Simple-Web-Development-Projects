@@ -1,0 +1,156 @@
+
+.subscription-card p {
+    margin: 0;
+}
+.subscriptions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-bottom: 200px;
+    width: 100%;
+}   
+.subscription-card {
+    justify-self: center;
+    background-color: var(--optional-clr);
+    display: inline-block;
+    color: black;
+    border-radius: 9px;
+    transition-duration: 0.2s;
+    width: 85%;
+    margin-top: 50px;
+}
+.bigger-subscription-card {
+    scale: 1.04;
+}
+.subscription-card:hover {
+    scale: 1.03;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+}
+.bigger-subscription-card:hover {
+    scale: 1.07;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-clr);
+    padding: 30px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+.header .price {
+    font-size: 60px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+span {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    opacity: 0.5;
+    font-weight: 300;
+}
+.header .secondary-info {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    opacity: 0.5;
+    font-weight: 400;
+}
+.subscription-card .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    padding: 30px;
+}
+.subscription-card .main-content .benefit, .lose {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.lose {
+    opacity: 0.4;
+}
+.benefit {
+    font-weight: 600;
+}
+.x-mark, 
+.checkmark {
+    font-size: 25px;
+    margin-right: 6px;
+    opacity: 1;
+}
+.x-mark {
+    color: red;
+}
+.checkmark {
+    color: rgb(0, 188, 0);
+}
+.buy-now-button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 30px 30px;
+
+}
+.buy-now-button {
+    border-radius: 40px;
+    font-size: 25px;
+    padding: 20px 80px;
+    width: 100%;
+    border: var(--accent-clr) solid 3px;
+    color: var(--accent-clr);
+    background-color: transparent;
+    transition-duration: 0.17s;
+    font-weight: 500;
+}
+.buy-now-button:hover {
+    color: white;
+    background-color: var(--accent-clr);
+    cursor: pointer;
+}
+.buy-now-button:active {
+    background-color: #c300ff;
+    border-color: #c300ff;
+}
+.about-us-image {
+    width: 285px;
+    height: 285px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.about-us-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about-us-text-div {
+    max-width: 600px;
+    margin: 0px 50px 0px 50px;
+    background-color: var(--primary-clr);
+    padding: 35px 25px 35px 25px;
+    border-radius: 8px;
+}
+.about-us-text {
+    font-size: 25px;
+    color: black;
+    margin: 0;
+    line-height: 35px;
+}
+.more-about-us-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+.more-about-us-text {
+    margin: 0px 0px 30px 0px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    background-color: var(--primary-clr);
+    padding: 30px;
+    border-radius: 8px;
+}
