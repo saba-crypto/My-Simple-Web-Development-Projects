@@ -189,6 +189,12 @@
         width: 120px;
         margin: 0;
     }
+    .aditional-text {
+        text-align: center;
+    }
+    .aditional-text-div {
+        padding: 5px;
+    }
     
 
     /*design for header*/
@@ -204,7 +210,10 @@
         margin: 0;
 
     }
-    .main-header .profile-picture, .profile-picture-div {
+    .main-header .log-in-button {
+        border: 0;
+        opacity: 0;
+        padding: 0;
         width: 0.1px;
         height: 0.1px;
     }

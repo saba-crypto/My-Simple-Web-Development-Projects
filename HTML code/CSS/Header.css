@@ -47,6 +47,17 @@
 .profile-picture-div:hover .tooltip {
     opacity: 1;
 }
+.first-name,
+.last-name,
+.number,
+.address {
+    display: flex;
+    align-items: center;
+}
+.identity-icon {
+    width: 20px;
+    margin-right: 10px;
+}
 .cart-icon-div {
     position: relative;
     cursor: pointer;
