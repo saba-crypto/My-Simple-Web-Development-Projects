@@ -1,0 +1,160 @@
+@media (max-width: 1100px) {
+    .whole-content {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    .left-side-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .right-side-div {
+        position: static;
+    }
+    .brand-div {
+        width: 0.1px;
+        height: 0.1px;
+    }
+    .brand {
+        font-size: 0.1px;
+        opacity: 0;
+    }
+    .hidden-brand-name {
+        font-size: 2rem;
+        opacity: 1;
+        color: white;
+        margin: 0;
+        width: 110px;
+        align-self: flex-start;
+    }
+    .page-title {
+        color: var(--accent-clr);
+    }
+    .header .right-side {
+        width: 300px;
+    }
+    .log-in-button,
+    .track-orders-button {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+@media (max-width: 800px) {
+    .header .right-side {
+        justify-content: space-evenly;
+    }
+    .log-in-button {
+        font-size: 0.1px;
+        opacity: 0;
+        width: 0.1px;
+        height: 0.1px;
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 660px) {
+    .left-side-div {
+        display: block;
+    }
+    .game-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+    }
+    .game-card {
+        max-width: 80%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .page-title {
+        font-size: 0.01rem;
+        opacity: 0;
+    }
+    .hidden-page-title {
+        color: var(--optional-clr);
+        opacity: 1;
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    .track-orders-button {
+        padding: 10px;
+    }
+    .profile-photo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .header .right-side {
+        max-width: 220px;
+    }
+    .pay-check {
+        padding: 15px;
+    }
+    .pay-check-title {
+        text-wrap: wrap;
+        font-size: 1.9rem;
+    }
+    .delivery-options {
+        gap: 10px;
+    }
+    .delivery-sub {
+        font-size: 17px;
+    }
+    .total-cash-div {
+        gap: 10px;
+    }
+    .pay-button-div {
+        margin-top: 15px;
+    }
+    .pay-button {
+        width: 100%;
+    }
+    .track-orders-button {
+        max-width: 350px;
+    }
+    .game-image {
+        width: 170px;
+    }
+    .game-card {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .game-image-div {
+        display: flex;
+        justify-content: center;
+    }
+    .game-name-div {
+        align-self: center;
+        height: 100%;
+        width: 200px;
+    }
+    .game-name {
+        font-size: 2rem;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .game-info-div {
+        margin: 0;
+    }
+    .price,
+    .quantity {
+        font-size: 1.6rem;
+        margin-left: 5px;
+    }
+    .update-button,
+    .remove-button {
+        
+        padding: 10px;
+        font-weight: 550;
+    }
+}
+@media (max-width: 550px) {
+    .game-cards {
+        grid-template-columns: 1fr;
+    }
+}

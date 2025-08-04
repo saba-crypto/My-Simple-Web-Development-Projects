@@ -51,7 +51,7 @@
     position: relative;
     cursor: pointer;
 }
-.cart-icon-div .tooltip {
+.cart-icon-div .badge {
     padding: 4px 8px;
     position: absolute;
     background-color: rgb(221, 0, 0);
@@ -62,7 +62,7 @@
     color: var(--optional-clr);
     font-weight: 600;
 }
-.cart-icon-div .tooltip2 {
+.cart-icon-div .tooltip {
     left: -22px;
     bottom: -57px;
     position: absolute;
@@ -75,7 +75,7 @@
     opacity: 0;
     transition-duration: 0.2s;
 }
-.cart-icon-div:hover .tooltip2 {
+.cart-icon-div:hover .tooltip {
     opacity: 1;
 }
 .log-in-button {

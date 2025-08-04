@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
     <link rel="stylesheet" href="/HTML code/CSS/Checkout.css" />
+    <link rel="stylesheet" href="/HTML code/CSS/Checkout-responsive.css" />
+    <link rel="stylesheet" href="/HTML code/CSS/General.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,21 +15,31 @@
     />
   </head>
   <body>
+    <div class="header">
+      <div class="left-side">
+        <img class="header-image menu-icon" src="/Images/Icons/menu.png" />
+        <a class="home-button-href" href="/HTML code/index.html">
+          <p class="home-button">Home</p>
+        </a>
+      </div>
+      <div class="middle-side">
+        <h1 class="page-title">Checkout(2 items)</h1>
+      </div>
+      <div class="right-side">
+        <button class="track-orders-button">Track Orders</button>
+        <button class="log-in-button">Log In</button>
+        <img class="header-image profile-photo" src="/Images/IMG_2176.jpg" />
+      </div>
+    </div>
+
     <div class="whole-content">
       <div class="left-side-div">
-        <div class="brand-div">
-          <div class="brand-inner-div">
-            <a style="text-decoration: none" href="/HTML code/index.html">
-              <h1 class="brand">OS GAME STORE</h1>
-            </a>
-          </div>
-        </div>
-
         <div class="game-cards">
           <div class="game-card">
             <div class="game-image-div">
               <img
                 class="game-image"
+                draggable="false"
                 src="/Images/Game card images/Mega-man7.webp"
               />
             </div>
@@ -50,6 +62,7 @@
             <div class="game-image-div">
               <img
                 class="game-image"
+                draggable="false"
                 src="/Images/Game card images/doom.webp"
               />
             </div>
@@ -70,6 +83,7 @@
         </div>
       </div>
       <div class="right-side-div">
+        <h1 class="hidden-page-title">Checkout(2 items)</h1>
         <div class="pay-check">
           <div class="pay-check-title-div">
             <div class="pay-check-title">Select Delivery Option</div>
@@ -119,7 +133,6 @@
             <button class="pay-button">Pay($23.48)</button>
           </div>
         </div>
-        <button class="track-orders-button">Track Orders</button>
       </div>
     </div>
   </body>

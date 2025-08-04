@@ -1,6 +1,6 @@
 body {
-    background-color: #a0a0a0;
     font-family: Roboto;
+    padding-top: 100px;
 }
 p {
     margin: 0;
@@ -9,6 +9,104 @@ p {
     display: flex;
     flex-direction: row;
 }
+
+/*----------HEADER----------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: var(--secondary-clr);
+    color: black;
+    height: 70px;
+    z-index: 100;
+}
+.header .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    margin-right: 20px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    width: 40px;
+    margin: 0px 20px;
+}
+.home-button {
+    color: var(--optional-clr);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.home-button-href {
+    text-decoration: none;
+}
+.hidden-page-title {
+    opacity: 0;
+    font-size: 0.1px;
+}
+.page-title {
+    margin: 0px 20px;
+    color: var(--optional-clr);
+    white-space: nowrap;
+}
+.track-orders-button {
+    padding: 15.5px 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: solid 1.7px white;
+    max-width: 370px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.track-orders-button:hover {
+    background-color: white;
+    color: var(--secondary-clr);
+}
+.track-orders-button:active {
+    opacity: 0.8;
+}
+.log-in-button{
+    padding: 16px 34px;
+    white-space: nowrap;
+    background-color: transparent;
+    border: var(--accent-clr) 1.7px solid;
+    color: var(--accent-clr);
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.15s;
+    box-sizing: border-box;
+}
+.log-in-button:hover {
+    background-color: var(--accent-clr);
+    filter: saturate(120%);
+    color: var(--secondary-clr);
+    cursor: pointer;
+}
+.log-in-button:active {
+    scale: 0.96;
+}
+.profile-photo {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
 
 /*----------CART----------*/
 
@@ -36,16 +134,16 @@ p {
 }
 .game-card {
     display: flex;
-    background-color: #414141;
+    background-color: #000000;
     border-radius: 15px;
     padding: 20px;
-    border: #BAFF39 solid 2px;
+    border: var(--primary-clr) solid 2px;
     box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.7);
 }
 .game-image {
     width: 200px;
     border-radius: 15px;
-    border: solid white 3px;
+    border: solid var(--primary-clr) 3px;
 }
 
 .game-info-div {
@@ -55,18 +153,17 @@ p {
     justify-content: space-around;
 }
 .game-name-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+    background-color: var(--primary-clr);
     border-radius: 15px;
     width: 300px;
+    max-width: 300px;
     height: 120px;
-    border: white solid 2px;
+    border: black solid 2px;
 }
 .game-name {
+    text-align: center;
     font-size: 40px;
-    color: white;
+    color: black;
     font-weight: bold;
 }
 .game-price-quantity-div {
@@ -97,11 +194,11 @@ p {
     transition-duration: 0.15s;
 }
 .update-button {
-    background-color: #E7E7E7;
+    background-color: var(--accent-clr);
     border: none;
     padding: 12px 30px;
     border-radius: 12px;
-    color: rgb(0, 0, 0);
+    color: var(--optional-clr);
     font-weight: 600;
     font-size: 20px;
     cursor: pointer;
@@ -118,22 +215,21 @@ p {
 }
 
 /*----------PAY CHECK----------*/
+
 .right-side-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 50px;
-    top: 30px;
-    bottom: 30px;
+    right: 40px;
+    top: 80px;
     row-gap: 20px;
 }
 .pay-check {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
+    background-color: var(--optional-clr);
     padding: 25px;
     border-radius: 15px;
     transition-duration: 0.15s;
@@ -145,6 +241,7 @@ p {
     margin-bottom: 30px;
 }
 .pay-check-title {
+    color: var(--secondary-clr);
     font-size: 30px;
     font-weight: 600;
 }
@@ -172,11 +269,12 @@ p {
 }
 .delivery-title {
     font-weight: bold;
+    color: var(--secondary-clr);
 }
 .delivery-sub {
-    font-weight: 600;
-    font-size: 17px;
-    color: #ff0000;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--accent-clr);
 }
 .radio-input-div {
     display: flex;
@@ -186,13 +284,18 @@ p {
     margin-right: 30px;
 }
 .radio-input {
-    accent-color: red;
+    accent-color: var(--accent-clr);
     font-size: 30px;
     width: 30px;
     height: 30px;
     margin: 0px 0px 0px 12px;
     cursor: pointer;
+    transition-duration: 0.2s;
 }
+.radio-input:hover {
+    transform: scale(1.2);
+}
+
 .total-cash-div {
     display: flex;
     flex-direction: column;
@@ -202,14 +305,16 @@ p {
 }
 .cash-div {
     border-radius: 10px;
-    background-color: #BAFF39;
+    background-color: var(--primary-clr);
     display: flex;
     justify-content: space-between;
     gap: 40px;
     padding: 10px;
     width: 300px;
+    box-sizing: border-box;
 }
 .price-text {
+    color: var(--secondary-clr);
     font-size: 20px;
     font-weight: 500;
 }
@@ -219,8 +324,8 @@ p {
     justify-content: center;
 }
 .pay-button {
-    background-color: #12AF00;
-    color: white;
+    background-color: var(--accent-clr);
+    color: var(--optional-clr);
     border: none;
     width: 320px;
     height: 80px;
@@ -228,32 +333,17 @@ p {
     font-weight: 700;
     font-size: 30px;
     cursor: pointer;
-    transition: background-color 0.15s;
+    transition: opacity 0.15s;
 }
 .pay-button:hover {
-    background-color: #0f9500;
+    opacity: 0.8;
 }
 .pay-button:active {
     transition-duration: 0.01s;
-    opacity: 0.8;
+    opacity: 1;
 }
-.track-orders-button {
-    width: 100%;
-    height: 70px;
-    border-radius: 15px;
-    background-color: transparent;
-    color: white;
-    font-size: 24px;
-    font-weight: 600;
-    border: solid 3px white;
 
-    cursor: pointer;
-    transition: background-color 0.15s, color 0.15s;
-}
-.track-orders-button:hover {
-    background-color: white;
-    color: #818181;
-}
-.track-orders-button:active {
-    opacity: 0.8;
+.hidden-brand-name {
+    font-size: 0.1px;
+    opacity: 0;
 }

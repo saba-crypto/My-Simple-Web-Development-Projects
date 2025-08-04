@@ -277,9 +277,12 @@
 
 
 
+
+
 /*--------------------ANIMATIONS--------------------*/
 
-.popular-games-animation,
+
+.game-card1-animation,
 .game-card-animation {
     animation: revealFromBottom 5s both;
     animation-timeline: view();
