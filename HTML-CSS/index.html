@@ -18,7 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
       rel="stylesheet"
     />
-    <button>hi</button>
+    <script
+      src="https://kit.fontawesome.com/bcae3ba9f2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="whole-content">
@@ -30,7 +33,7 @@
 
         <div class="middle-segment">
           <div class="search-bar-div">
-            <img class="search-icon" src="/Images/Icons/Search-icon.png" />
+            <img class="search-icon" src="/Images/Icons/white-search.png" />
             <input class="search-bar" type="text" placeholder="Search" />
           </div>
         </div>
@@ -89,14 +92,20 @@
             </div>
             <img class="gamepad-image" src="/images/gamepad-image.jpeg" />
           </div>
-          <div class="aditional-text-div">
-            <h2 class="aditional-text">
+          <div class="additional-text-div">
+            <h2 class="additional-text">
               OS GAME STORE is Trusted Across The World! We Offer You Unlimited
               Fun And Unique Games
             </h2>
           </div>
           <div class="first-segment-buttons">
-            <button class="buy-button">Buy Now</button>
+            <button class="buy-button">
+              <a
+                style="text-decoration: none; color: var(--optional-clr)"
+                href="#popular-games"
+                >Buy Now</a
+              >
+            </button>
             <button class="sign-in-button">Sign Up</button>
           </div>
         </div>
@@ -104,7 +113,7 @@
       <hr class="white-line" width="70%" size="2" />
       <div class="second-segment">
         <div class="title-div">
-          <h2 class="title">Best Selling Games:</h2>
+          <h2 class="title" id="popular-games">Best Selling Games:</h2>
         </div>
         <div class="popular-games-segment popular-games-animation">
           <div class="game-card game-card1-animation">
@@ -119,12 +128,8 @@
             </div>
             <div class="game-info-flex">
               <div class="game-info">
-                <button class="add-to-cart-button">
-                  Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                </button>
-                <button class="examine-button">
-                  Examine <img src="/Images/Icons/unfold-more-icon.png" />
-                </button>
+                <button class="add-to-cart-button">Add to cart</button>
+                <button class="examine-button">Inspect</button>
               </div>
               <div class="game-name-div">
                 <div class="game-name">Super Mario World</div>
@@ -143,12 +148,8 @@
             </div>
             <div class="game-info-flex">
               <div class="game-info">
-                <button class="add-to-cart-button">
-                  Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                </button>
-                <button class="examine-button">
-                  Examine <img src="/Images/Icons/unfold-more-icon.png" />
-                </button>
+                <button class="add-to-cart-button">Add to cart</button>
+                <button class="examine-button">Inspect</button>
               </div>
               <div class="game-name-div">
                 <div class="game-name">Tetris 99</div>
@@ -167,12 +168,8 @@
             </div>
             <div class="game-info-flex">
               <div class="game-info">
-                <button class="add-to-cart-button">
-                  Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                </button>
-                <button class="examine-button">
-                  Examine <img src="/Images/Icons/unfold-more-icon.png" />
-                </button>
+                <button class="add-to-cart-button">Add to cart</button>
+                <button class="examine-button">Inspect</button>
               </div>
               <div class="game-name-div">
                 <div class="game-name">
@@ -193,12 +190,8 @@
             </div>
             <div class="game-info-flex">
               <div class="game-info">
-                <button class="add-to-cart-button">
-                  Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                </button>
-                <button class="examine-button">
-                  Examine <img src="/Images/Icons/unfold-more-icon.png" />
-                </button>
+                <button class="add-to-cart-button">Add to cart</button>
+                <button class="examine-button">Inspect</button>
               </div>
               <div class="game-name-div">
                 <div class="game-name">Sonic The Hedgehog 2</div>
@@ -225,10 +218,8 @@
               </div>
               <div class="game-info-flex">
                 <div class="game-info">
-                  <button class="add-to-cart-button">
-                    Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                  </button>
-                  <button class="examine-button">Examine</button>
+                  <button class="add-to-cart-button">Add to cart</button>
+                  <button class="examine-button">Inspect</button>
                 </div>
                 <div class="game-name-div">
                   <div class="game-name2">Bionic Commando: ReArmed</div>
@@ -249,10 +240,8 @@
               </div>
               <div class="game-info-flex">
                 <div class="game-info">
-                  <button class="add-to-cart-button">
-                    Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                  </button>
-                  <button class="examine-button">Examine</button>
+                  <button class="add-to-cart-button">Add to cart</button>
+                  <button class="examine-button">Inspect</button>
                 </div>
                 <div class="game-name-div">
                   <div class="game-name2">
@@ -275,10 +264,8 @@
               </div>
               <div class="game-info-flex">
                 <div class="game-info">
-                  <button class="add-to-cart-button">
-                    Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                  </button>
-                  <button class="examine-button">Examine</button>
+                  <button class="add-to-cart-button">Add to cart</button>
+                  <button class="examine-button">Inspect</button>
                 </div>
                 <div class="game-name-div">
                   <div class="game-name2">Donkey-Kong country returns 3D</div>
@@ -299,10 +286,8 @@
               </div>
               <div class="game-info-flex">
                 <div class="game-info">
-                  <button class="add-to-cart-button">
-                    Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                  </button>
-                  <button class="examine-button">Examine</button>
+                  <button class="add-to-cart-button">Add to cart</button>
+                  <button class="examine-button">Inspect</button>
                 </div>
                 <div class="game-name-div">
                   <div class="game-name2">Final fantasy VII</div>
@@ -323,10 +308,8 @@
               </div>
               <div class="game-info-flex">
                 <div class="game-info">
-                  <button class="add-to-cart-button">
-                    Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                  </button>
-                  <button class="examine-button">Examine</button>
+                  <button class="add-to-cart-button">Add to cart</button>
+                  <button class="examine-button">Inspect</button>
                 </div>
                 <div class="game-name-div">
                   <div class="game-name2">DOOM ETERNAL</div>
@@ -347,10 +330,8 @@
               </div>
               <div class="game-info-flex">
                 <div class="game-info">
-                  <button class="add-to-cart-button">
-                    Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                  </button>
-                  <button class="examine-button">Examine</button>
+                  <button class="add-to-cart-button">Add to cart</button>
+                  <button class="examine-button">Inspect</button>
                 </div>
                 <div class="game-name-div">
                   <div class="game-name2">GoldenEye 007</div>
@@ -371,10 +352,8 @@
               </div>
               <div class="game-info-flex">
                 <div class="game-info">
-                  <button class="add-to-cart-button">
-                    Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                  </button>
-                  <button class="examine-button">Examine</button>
+                  <button class="add-to-cart-button">Add to cart</button>
+                  <button class="examine-button">Inspect</button>
                 </div>
                 <div class="game-name-div">
                   <div class="game-name2">Mega Man7</div>
@@ -395,10 +374,8 @@
               </div>
               <div class="game-info-flex">
                 <div class="game-info">
-                  <button class="add-to-cart-button">
-                    Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                  </button>
-                  <button class="examine-button">Examine</button>
+                  <button class="add-to-cart-button">Add to cart</button>
+                  <button class="examine-button">Inspect</button>
                 </div>
                 <div class="game-name-div">
                   <div class="game-name2">Super Mario 64</div>
@@ -419,10 +396,8 @@
               </div>
               <div class="game-info-flex">
                 <div class="game-info">
-                  <button class="add-to-cart-button">
-                    Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                  </button>
-                  <button class="examine-button">Examine</button>
+                  <button class="add-to-cart-button">Add to cart</button>
+                  <button class="examine-button">Inspect</button>
                 </div>
                 <div class="game-name-div">
                   <div class="game-name2">
@@ -445,10 +420,8 @@
               </div>
               <div class="game-info-flex">
                 <div class="game-info">
-                  <button class="add-to-cart-button">
-                    Add to cart <img src="/Images/Icons/add-to-cart-icon.png" />
-                  </button>
-                  <button class="examine-button">Examine</button>
+                  <button class="add-to-cart-button">Add to cart</button>
+                  <button class="examine-button">Inspect</button>
                 </div>
                 <div class="game-name-div">
                   <div class="game-name2">Final Fantasy XVI</div>
@@ -477,7 +450,7 @@
                   Game
                 </p>
                 <p class="benefit">
-                  <span class="checkmark">&#10003;</span> AD Free Expirience
+                  <span class="checkmark">&#10003;</span> AD Free Experience
                 </p>
                 <p class="benefit">
                   <span class="checkmark">&#10003;</span> More Special Game List
@@ -508,7 +481,7 @@
                   10% Discount On Every Game
                 </p>
                 <p class="benefit">
-                  <span class="checkmark">&#10003;</span> AD Free Expirience
+                  <span class="checkmark">&#10003;</span> AD Free Experience
                 </p>
                 <p class="benefit">
                   <span class="checkmark">&#10003;</span> More Special Game List
@@ -537,7 +510,7 @@
                   Game
                 </p>
                 <p class="benefit">
-                  <span class="checkmark">&#10003;</span> AD Free Expirience
+                  <span class="checkmark">&#10003;</span> AD Free Experience
                 </p>
                 <p class="benefit">
                   <span class="checkmark">&#10003;</span> More Special Game List
@@ -563,7 +536,7 @@
           <div class="about-us-container">
             <div class="about-us-image-div">
               <img
-                class="about-us-image"
+                class="about-us-image about-us-animation"
                 src="/images/pexels-cottonbro-5767684.jpg"
               />
             </div>
@@ -581,7 +554,7 @@
             </div>
             <div class="about-us-image-div">
               <img
-                class="about-us-image"
+                class="about-us-image about-us-animation"
                 src="/images/gamestore-nocopyright.jpg"
               />
             </div>
@@ -590,23 +563,42 @@
         <div class="end-of-site">
           <div class="horizontal-flex">
             <div class="vertical-flex">
-              <p class="vidget">Help</p>
-              <p class="vidget">Return</p>
-              <p class="vidget">FAQ</p>
+              <p class="widget">Help</p>
+              <p class="widget">Return</p>
+              <p class="widget">FAQ</p>
             </div>
             <div class="vertical-flex">
-              <p class="vidget">About us</p>
-              <p class="vidget">QNA</p>
-              <p class="vidget">DNS</p>
+              <p class="widget">About us</p>
+              <p class="widget">QNA</p>
+              <p class="widget">DNS</p>
             </div>
             <div class="vertical-flex">
-              <p class="vidget">Company</p>
-              <p class="vidget">Products</p>
-              <p class="vidget">Seller</p>
+              <p class="widget">Company</p>
+              <p class="widget">Products</p>
+              <p class="widget">Seller</p>
             </div>
           </div>
           <div class="copyright-flex">
-            <p>OS Game Store None Rights Reserved &#169;</p>
+            <p class="copyright-sign">
+              OS Game Store None Rights Reserved &#169;
+            </p>
+            <div class="brands-div">
+              <a href="https://www.youtube.com/@sabaGochishvili" target="_blank"
+                ><i class="fa-brands fa-youtube" style="color: red"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/saba.gochishvili"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-facebook"
+                  style="color: rgb(96, 96, 255)"
+                ></i>
+              </a>
+              <a href="https://github.com/saba-crypto" target="_blank"
+                ><i class="fa-brands fa-github" style="color: white"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>

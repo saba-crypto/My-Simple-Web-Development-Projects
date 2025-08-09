@@ -19,7 +19,6 @@
     height: 100%;
 }
 .first-text {
-    
     color: var(--optional-clr);
     font-size: 35px;
     margin-right: 20px;
@@ -35,11 +34,10 @@
 }
 .upper-text {
     display: flex;
-    
     align-items: center;
     margin-bottom: 25px;
 }
-.aditional-text-div {
+.additional-text-div {
     border: none;
     background-color: var(--primary-clr);
     padding: 20px;
@@ -49,7 +47,7 @@
     box-sizing: border-box;
     width: 100%;
 }
-.aditional-text {
+.additional-text {
     width: 100%;
     border: none;
     color: black;
@@ -78,7 +76,7 @@
     align-items: center;
     margin-top: 20px;
     max-width: 460px;
-    column-gap: 10px;
+    column-gap: 20px;
 }
 
 .buy-button,
@@ -91,23 +89,23 @@
     box-sizing: border-box;
 }   
 .buy-button {
+    position: relative;
     background-color: var(--accent-clr);
     color: white;
     font-size: 20px;
     font-weight: 600;
     transition-duration: 0.15s;
-    border: solid 2px var(--accent-clr);
-}
-.buy-button:hover {
-    background-color: #c300ff;
-    border-color: #c300ff;
-    scale: 1.02;
+    background: linear-gradient(to right, rgb(128, 0, 255), var(--accent-clr));
     cursor: pointer;
-    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+}
+
+.buy-button:hover {
+    scale: 1.02;
+    box-shadow: 0px 0px 20px rgba(128, 0, 255, 0.8);
     font-weight: 600;
 }
 .buy-button:active {
-    scale: 0.97;
+    scale: 0.99;
 }
 .sign-in-button {
     background-color: transparent;
@@ -116,14 +114,16 @@
     font-size: 19px;
     font-weight: 600;
     transition-duration: 0.15s;
+    box-sizing: border-box;
 }
 .sign-in-button:hover {
     color: #242424;
     background-color: white;
-    scale: 1.03;
+    scale: 1.02;
     cursor: pointer;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
+    
 }
 .sign-in-button:active {
-    scale: 0.97;
+    scale: 0.99;
 }

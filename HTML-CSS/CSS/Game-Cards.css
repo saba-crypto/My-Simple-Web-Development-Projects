@@ -119,21 +119,42 @@
 }
 .add-to-cart-button {
     color: var(--optional-clr);
-    background-color: var(--accent-clr);
+    background-image: linear-gradient(to right, rgb(128, 0, 255), var(--accent-clr));
     transition-duration: 0.15s;
     margin-top: -1px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+.add-to-cart-button::after {
+    content: "";
+    width: 0;
+    height: 0;
+    opacity: 1;
+    z-index: -1;
+    background-image: url(/Images/Icons/add_shopping_cart_27dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png);
+    transform: translateX(10px);
+    transition-duration: 0.15s;
+    background-repeat: no-repeat;
+}
+.add-to-cart-button:hover::after {
+    opacity: 1;
+    width: 40%;
+    height: 25px;
+    margin-left: 5px;
+    transform: translateX(0px);
 }
 .add-to-cart-button:hover {
     background-color: #c300ff;
-    cursor: pointer;
+    
 }
 .add-to-cart-button:active {
     opacity: 0.8;
 }
 .examine-button {
+    position: relative;
     background-color: transparent;
     border: solid 2px var(--primary-clr);
     color: var(--primary-clr);
@@ -142,11 +163,52 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    transition-duration: 0.2s;
+    z-index: 1;
+}
+.examine-button::before {
+    content: "";
+    bottom: 0%;
+    border: solid 2px var(--primary-clr);
+    top: 100%;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    background-color: var(--primary-clr);
+    z-index: -1;
+    transition-duration: 0.15s;
+    box-sizing: border-box;
+}
+.examine-button:hover::before{
+    opacity: 1;
+    bottom: 0%;
+    top: 0%;
 }
 .examine-button:hover {
-    background-color: var(--primary-clr);
     color: black;
 }
+.examine-button::after {
+    display: flex;
+    content: "";
+    width: 0px;
+    opacity: 0;
+    z-index: -1;
+    background-image: url(/Images/Icons/search_28dp_000000_FILL0_wght400_GRAD0_opsz24.svg);
+    transform: translateY(50px);
+    transition-duration: 0.15s;
+    background-repeat: no-repeat;
+}
+.examine-button:hover::after {
+    opacity: 1;
+    width: 30%;
+    height: 23px;
+    margin-left: 5px;
+    transform: translateY(0px);
+}
+
+
+
 .examine-button:active {
     opacity: 0.7;
 }

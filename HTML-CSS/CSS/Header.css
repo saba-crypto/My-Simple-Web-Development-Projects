@@ -89,22 +89,43 @@
 .cart-icon-div:hover .tooltip {
     opacity: 1;
 }
+
 .log-in-button {
+    position: relative;
     padding: 16px 34px;
     white-space: nowrap;
-    background-color: transparent;
-    border: var(--accent-clr) 1.7px solid;
-    color: var(--accent-clr);
-    border-radius: 5px;
+    color: var(--optional-clr);
+    border-radius: 10px;
+    background: transparent;
+    border: var(--accent-clr) 2px solid;
     font-weight: 600;
     transition: 0.15s;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+.log-in-button::after {
+    content: "";
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    background: var(--accent-clr);
+    transition-duration: 0.2s;
+    border-radius: 5px;
+    z-index: -1;
 }
 .log-in-button:hover {
-    
-    background-color: var(--accent-clr);
-    filter: saturate(120%);
-    color: var(--secondary-clr);
-    cursor: pointer;
+    color: white;
+}
+.log-in-button:hover::after {
+    content: "";
+    opacity: 1;
+    left: 0;
+    right: 0;
 }
 .log-in-button:active {
     scale: 0.96;
@@ -143,6 +164,7 @@
 .search-bar-div {  
     display: flex;
     align-items: center;
+    background: linear-gradient(to right, rgb(128, 0, 255), var(--accent-clr));
     background-color: var(--accent-clr);
     border-radius: 10px;   
 }
@@ -154,8 +176,9 @@
     padding-left: 10px;
     border-radius: 10px;
     border: none;
-    background-color: var(--accent-clr);
     box-sizing: border-box;
+    background-color: transparent;
+    color: var(--optional-clr);
 }
 .search-bar::placeholder {
     color: var(--optional-clr);

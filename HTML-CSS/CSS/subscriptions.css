@@ -109,11 +109,23 @@ span {
     color: white;
     background-color: var(--accent-clr);
     cursor: pointer;
+    animation: hoverAnim 2s ease-in-out infinite;
+    animation-direction: alternate;
 }
 .buy-now-button:active {
-    background-color: #c300ff;
-    border-color: #c300ff;
+    opacity: 0.8;
 }
+@keyframes hoverAnim {
+    0% {
+        background-color: rgb(128, 0, 255);
+        border-color: rgb(128, 0, 255);
+    }
+    100% {
+        background-color: var(--accent-clr);
+        border-color: var(--accent-clr);
+    }
+}
+
 .about-us-image {
     width: 285px;
     height: 285px;

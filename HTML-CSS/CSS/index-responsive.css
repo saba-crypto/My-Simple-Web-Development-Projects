@@ -93,6 +93,8 @@
 }
 @media (max-width: 750px) {
 
+
+
     /*Design for introduction*/
 
     .first-segment {
@@ -103,10 +105,10 @@
         margin-right: 30px;
     }
     .first-text {
-        font-size: 21px;
+        font-size: 1.6rem;
         font-weight: 600;
     }
-    .aditional-text {
+    .additional-text {
         font-size: 20px;
         font-weight: 600;
     }
@@ -159,6 +161,9 @@
         height: 0.1px;
         opacity: 0;
     }
+    .brands-div {
+        position: static;
+    }
 
 }
 
@@ -189,11 +194,15 @@
         width: 120px;
         margin: 0;
     }
-    .aditional-text {
+    .additional-text {
         text-align: center;
     }
-    .aditional-text-div {
+    .additional-text-div {
         padding: 5px;
+    }
+    .buy-button,
+    .sign-in-button {
+        padding: 15px 0px;
     }
     
 
@@ -279,7 +288,6 @@
     }
     .about-us-text {
         font-size: 22px;
-        animation: name duration timing-function delay iteration-count direction fill-mode;
     }
 }
 
@@ -293,17 +301,17 @@
 
 .game-card1-animation,
 .game-card-animation {
-    animation: revealFromBottom 5s both;
+    animation: revealFromBottom both;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
 }
 .subscription-card-animation {
-    animation: scaleUp 5s both;
+    animation: scaleUp both;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
 }
 .about-us-animation {
-    animation: revealFromRight 5s both;
+    animation: revealFromBottom both;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
 }
@@ -328,3 +336,4 @@
         scale: 1;
     }
 }   
+
